@@ -1,21 +1,19 @@
-<h3>Test env</h3>
-<hr>
-<div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="login" type="text" class="validate">
-          <label for="login">Login</label>
-        </div>
+<div class="container">
+  <div class="row">
+      <div class="col-xs12">
+          <label>Username</label>
+            <br>
+            <input type="text" class="form-control"
+            [(ngModel)]='usuario'>
+            <br>
+            <label for="login">Senha</label>
+            <br>
+            <input type="password" class="form-control" [(ngModel)]='senha'>
+            <br>
+            <br>
+          <button class="btn btn-primary" [disabled]="senha == '' || usuario == ''"  (click)="onLogin()">Entrar</button>
+          <p *ngIf="login">Login efetuado com sucesso!</p>
       </div>
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="senha" type="password" class="validate">
-          <label for="senha">Senha</label>
-        </div>
-      </div>
-      <div class="row">
-          <button>Entrar</button>
-      </div>
-    </form>
   </div>
+</div>
+
