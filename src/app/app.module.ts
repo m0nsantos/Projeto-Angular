@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { LoginComponent } from './login/login.component';
+import { AuthService } from './login/auth.service';
 import { AppComponent } from './app.component'
 
 @NgModule({
@@ -14,7 +15,7 @@ import { AppComponent } from './app.component'
     BrowserModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
