@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit{
 
     onLogin(){
         console.log(this.user);
-        //this.authService.loginAuthentication(this.user);
+        this.authService.loginAuth(this.user);
+        console.log(this.user)
     }
 }

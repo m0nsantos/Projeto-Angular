@@ -11,7 +11,7 @@
             <br>
             <br>
           <button class="btn btn-primary"(click)="onLogin()">Entrar</button>
-          <!-- <p *ngIf="" id="loginText">Login efetuado com sucesso!</p> -->
+          <p *ngIf="this.authService.loginAuth(user)" id="loginText">Login efetuado com sucesso!</p>
       </div>
   </div>
 </div>

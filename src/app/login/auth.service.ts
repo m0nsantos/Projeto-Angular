@@ -9,5 +9,23 @@ import { LoginComponent } from 'Projeto-Angular/src/app/login/login.component';
   providedIn: 'root'
 })
 export class AuthService {
+
+  private authUser: boolean = false;
   
+  constructor(/*private router: Router*/){
+  }
+
+  loginAuth(user: User){
+
+    if (user.username === 'user' && user.password === '123') {
+
+      this.authUser = true;   
+      //this.router.navigate(['/']);
+      return this.authUser;
+      
+    } else {
+      this.authUser = false;      
+    }
+
+  }
 }
