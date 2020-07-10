@@ -10,7 +10,7 @@ import { User } from './user';
 
 export class LoginComponent implements OnInit{
     private user: User = new User();
-    //login = false;
+    loginOk = false;
    
     constructor(private authService: AuthService){
         
@@ -22,7 +22,8 @@ export class LoginComponent implements OnInit{
 
     onLogin(){
         console.log(this.user);
-        this.authService.loginAuth(this.user);
+        //this.authService.loginAuth(this.user);
+        this.loginOk = this.authService.loginAuth(this.user);
         console.log(this.user)
     }
 }
