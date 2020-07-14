@@ -6,9 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  @Input('getLks') element: number;
-  getLikes = [{ number: 'likes' },{ number: 'comments'}]
-
+  getLikes = []
+  valor = 0;
 
   constructor() { }
 
@@ -17,7 +16,11 @@ export class HomeComponent implements OnInit {
 
   onLike() {
    this.getLikes.push({
-     number: ''+ this.element
+    number: 1
    });
   }
+
 }
+
+
+  

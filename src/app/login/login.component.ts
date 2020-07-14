@@ -3,6 +3,7 @@ import { AuthService } from './auth.service';
 import { User } from './user';
 import { Router } from '@angular/router';
 
+
 @Component({
     selector: 'app-login',
     templateUrl:'./login.component.html',
@@ -27,7 +28,7 @@ export class LoginComponent implements OnInit{
         //this.authService.loginAuth(this.user);
         this.loginOk = this.authService.loginAuth(this.user);
         console.log(this.user);
-        this.router.navigate(['/home',{getLks: 3}]);
+        this.router.navigate(['/home']);
 
     }
 }
