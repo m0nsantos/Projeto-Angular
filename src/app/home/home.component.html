@@ -11,11 +11,16 @@
     
 
 <div class="wrapper">
-    <div class="box a"><img src="https://picsum.photos/300/300" alt="coisas do hamilton"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!</div>
-    <div class="box b">
+    <div class="box a"> 
+      <img src="https://picsum.photos/300/300" alt="coisas do hamilton">
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
+      <br>
       <button class="btn btn-primary"(click)="onLike()">curtir</button>
-      <div *ngFor="let getLike of getLikes" [getLks]="getLike"></div>
-       <p></p>
+      <div *ngFor="let getLike of getLikes">{{getLike.number}}</div>
+      <p></p>
+    </div>
+    <div class="box b">
     </div>
     <div class="box c">C</div>
     <div class="box d">D</div>
