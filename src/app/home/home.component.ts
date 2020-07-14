@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  getLikes = []
-  valor = 0;
+  getLikes = [{number: 1}]
 
   constructor() { }
 
@@ -15,9 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
   onLike() {
-   this.getLikes.push({
-    number: 1
-   });
+    this.getLikes[0].number += 1;
   }
 
 }

@@ -18,7 +18,7 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
       <br>
       <button class="btn btn-primary" ng-click="onLike()">curtir</button>
-      <div *ngFor="let getLike of getLikes; let i = index">{{getLike.number}}</div>
+      <div *ngFor="let getLike of getLikes">{{getLike.number}}</div>
       <!--<img id="like" src="https://pbs.twimg.com/profile_images/742050233320898560/K2r-_yxQ_400x400.jpg" alt="">-->
     </div>
     <div class="box b">
@@ -27,15 +27,15 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
       <br>
       <button class="btn btn-primary" ng-click="onLike()">curtir</button>
-      <div *ngFor="let getLike of getLikes; let i = index">{{getLike.number}}</div>
+      <div *ngFor="let getLike of getLikes;">{{getLike.number}}</div>
     </div>
     <div class="box c">
       <img src="https://picsum.photos/301/300" alt="coisas do hamilton">
       <br>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
       <br>
-      <button class="btn btn-primary" ng-click="onLike()">curtir</button>
-      <div *ngFor="let getLike of getLikes; let i = index">{{getLike.number}}</div>
+      <button class="btn btn-primary" ngClick="onLike()">curtir</button>
+      <div class="like" *ngFor="let getLike of getLikes">{{getLike.number}}</div>
     </div>
     <div class="box d">D</div>
     <div class="box e">E</div>
