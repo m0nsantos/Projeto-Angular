@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <nav>
     <div class="nav-wrapper">
-      <a class="brand-logo"><img src="/src/logo.png" alt=""></a>
+      <a href="" class="brand-logo">Logo</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href = '/home' >Home</a></li>
         <li><a href="/contato">Contato</a></li>
@@ -12,34 +12,65 @@
     
 
 <div class="wrapper">
-    <div class="box a"> 
+    <div class="box"> 
       <img src="https://picsum.photos/300/300" alt="coisas do hamilton">
       <br>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
       <br>
-      <button class="btn btn-primary" ng-click="onLike()">curtir</button>
-      <div *ngFor="let getLike of getLikes">{{getLike.number}}</div>
-      <!--<img id="like" src="https://pbs.twimg.com/profile_images/742050233320898560/K2r-_yxQ_400x400.jpg" alt="">-->
+      <br>
+      <button class="btn btn-primary" (click)="onLike()">curtir</button>
+      <div class="like" *ngFor="let getLike of getLikes">{{getLike.number}}</div>
     </div>
+
     <div class="box b">
-      <img src="https://picsum.photos/300/301" alt="coisas do hamilton">
-      <br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
-      <br>
-      <button class="btn btn-primary" ng-click="onLike()">curtir</button>
-      <div *ngFor="let getLike of getLikes;">{{getLike.number}}</div>
-    </div>
-    <div class="box c">
       <img src="https://picsum.photos/301/300" alt="coisas do hamilton">
       <br>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
       <br>
-      <button class="btn btn-primary" ngClick="onLike()">curtir</button>
-      <div class="like" *ngFor="let getLike of getLikes">{{getLike.number}}</div>
+      <br>
+      <button class="btn btn-primary" (click)="onLike1()">curtir</button>
+      <div class="like" *ngFor="let getLike of getLikes1">{{getLike.number}}</div>
     </div>
-    <div class="box d">D</div>
-    <div class="box e">E</div>
-    <div class="box f">F</div>
+
+    <div class="box c">
+      <img src="https://picsum.photos/300/301" alt="coisas do hamilton">
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
+      <br>
+      <br>
+      <button class="btn btn-primary" (click)="onLike2()">curtir</button>
+      <div class="like" *ngFor="let getLike of getLikes2">{{getLike.number}}</div>
+    </div>
+
+    <div class="box d">
+      <img src="https://picsum.photos/301/301" alt="coisas do hamilton">
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
+      <br>
+      <br>
+      <button class="btn btn-primary" (click)="onLike3()">curtir</button>
+      <div class="like" *ngFor="let getLike of getLikes3">{{getLike.number}}</div>
+    </div>
+
+    <div class="box e">
+      <img src="https://picsum.photos/302/301" alt="coisas do hamilton">
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
+      <br>
+      <br>
+      <button class="btn btn-primary" (click)="onLike4()">curtir</button>
+      <div class="like" *ngFor="let getLike of getLikes4">{{getLike.number}}</div>
+    </div>
+
+    <div class="box f">
+      <img src="https://picsum.photos/301/302" alt="coisas do hamilton">
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
+      <br>
+      <br>
+      <button class="btn btn-primary" (click)="onLike5()">curtir</button>
+      <div class="like" *ngFor="let getLike of getLikes5">{{getLike.number}}</div>
+    </div>
   </div>
 
 
