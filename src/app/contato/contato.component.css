@@ -9,5 +9,8 @@ a{
 
 .contactBox {
     display: flex;
+}
 
+.btn {
+    margin-left: 20px;
 }

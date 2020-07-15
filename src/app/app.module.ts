@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {FormControl } from '@angular/forms';
 
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './login/auth.service';
@@ -19,6 +20,7 @@ import { ContatoComponent } from './contato/contato.component'
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [AuthService],

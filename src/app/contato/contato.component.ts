@@ -1,4 +1,5 @@
 import { Component, OnInit, Injectable } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 // @Injectable({
 //   providedIn: 'root'
@@ -7,12 +8,17 @@ import { Component, OnInit, Injectable } from '@angular/core';
 @Component({
   selector: 'app-contato',
   templateUrl: './contato.component.html',
-  styleUrls: ['./contato.component.css']
+  styleUrls: ['./contato.component.css'],
+  
 })
 export class ContatoComponent implements OnInit {
-  first_name;
-  lastname;
-  localStorage : Storage
+
+  firstName: string;
+  lastName: string;
+  telNumber: string;
+  userMail: string;
+  txtArea: string;
+  concat: string;
 
   constructor() { }
 
@@ -21,22 +27,20 @@ export class ContatoComponent implements OnInit {
 
   initStorage()
   {
-    
-    
-    // var first_name = document.getElementById('first_name');
-    // localStorage.setItem('first_name', this.first_name);
- 
-    var last_name = document.getElementById('last_name').innerHTML;
-    console.log(this.lastname);
-    localStorage.setItem('last_name',last_name);
- 
-    // var email = document.getElementById('email');
-    // localStorage.setItem('email',email.nodeValue);
- 
-    // var telephone_number = document.getElementById('telephone_number');
-    // localStorage.setItem('telephone_number',telephone_number.nodeValue);
-  
-    // var textarea1 = document.getElementById('textarea1');
-    // localStorage.setItem('textarea1',textarea1.nodeValue);
+    localStorage.setItem('firstName',JSON.stringify(this.firstName)); 
+    localStorage.setItem('lastName',JSON.stringify(this.lastName));
+    localStorage.setItem('telNumber',JSON.stringify(this.telNumber));
+    localStorage.setItem('userMail',JSON.stringify(this.userMail));
+    localStorage.setItem('txtArea',JSON.stringify(this.txtArea));
+
+    this.concat = this.firstName + ';' + this.lastName + ';' + this.telNumber + ';' + this.userMail + ';' + this.txtArea;
+  }
+
+  generateFile()
+  {
+    let res = this.concat;
+    const blob = new Blob([res], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    window.open(url);
   }
 }
