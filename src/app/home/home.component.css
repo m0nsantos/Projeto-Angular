@@ -5,12 +5,13 @@ body {
   .wrapper {
     display: grid;
     grid-template-columns: 600px 600px 600px;
-    grid-template-rows: 600px 600px 600px;
+    grid-template-rows: 600px 600px;
     grid-gap: 10px;
     background-color: #fff;
     color: #444;
     padding-top: 20px;
     padding-left: 50px;
+    margin-left: 13%;
   }
   
   .box {
@@ -30,6 +31,15 @@ a{
 
 img {
   padding-left: 110px;
+}
+
+.btn {
+  margin-left: 20px;
+  width: 100px;
+}
+
+.like {
+  padding-left: 60px;
 }
 
 

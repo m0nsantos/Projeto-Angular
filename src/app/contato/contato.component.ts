@@ -1,4 +1,4 @@
-import { Component, OnInit, Injectable } from '@angular/core';
+import { Component, OnInit, Injectable, HostListener } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 // @Injectable({
@@ -8,9 +8,9 @@ import { FormGroup, FormControl } from '@angular/forms';
 @Component({
   selector: 'app-contato',
   templateUrl: './contato.component.html',
-  styleUrls: ['./contato.component.css'],
-  
+  styleUrls: ['./contato.component.css'],  
 })
+
 export class ContatoComponent implements OnInit {
 
   firstName: string;

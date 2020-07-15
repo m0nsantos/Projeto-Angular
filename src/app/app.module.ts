@@ -8,14 +8,17 @@ import { AuthService } from './login/auth.service';
 import { AppComponent } from './app.component'
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { ContatoComponent } from './contato/contato.component'
+import { ContatoComponent } from './contato/contato.component';
+import { HighlightDirective } from './directives/highlight.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    ContatoComponent
+    ContatoComponent,
+    
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
