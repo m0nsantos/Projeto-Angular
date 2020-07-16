@@ -5,7 +5,7 @@ body {
   .wrapper {
     display: grid;
     grid-template-columns: 600px 600px 600px;
-    grid-template-rows: 600px 600px;
+    grid-template-rows: 700px 700px;
     grid-gap: 10px;
     background-color: #fff;
     color: #444;
@@ -39,7 +39,7 @@ img {
 }
 
 .like {
-  padding-left: 60px;
+  padding-left: 20px;
 }
 
 

@@ -12,7 +12,12 @@ export class HomeComponent implements OnInit {
   getLikes3 = [{ number: 1 }];
   getLikes4 = [{ number: 1 }];
   getLikes5 = [{ number: 1 }];
-
+  getDeslikes = [{ number: 1 }];
+  getDeslikes1 = [{ number: 1 }];
+  getDeslikes2= [{ number: 1 }];
+  getDeslikes3 = [{ number: 1 }];
+  getDeslikes4 = [{ number: 1 }];
+  getDeslikes5 = [{ number: 1 }];
 
   constructor() { }
 
@@ -43,6 +48,22 @@ export class HomeComponent implements OnInit {
     this.getLikes5[0].number += 1;
    }
 
-
-
+  onDeslike() {
+    this.getDeslikes[0].number += 1;
+  }
+  onDeslike1() {
+    this.getDeslikes1[0].number += 1;
+  }
+  onDeslike2() {
+    this.getDeslikes2[0].number += 1;
+  }
+  onDeslike3() {
+    this.getDeslikes3[0].number += 1;
+  }
+  onDeslike4() {
+    this.getDeslikes4[0].number += 1;
+  }
+  onDeslike5() {
+    this.getDeslikes5[0].number += 1;
+  }
 }
