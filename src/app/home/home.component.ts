@@ -9,19 +9,40 @@ export class HomeComponent implements OnInit {
   getLikes  = [{ number: 1 }];
   getLikes1 = [{ number: 1 }];
   getLikes2 = [{ number: 1 }];
-  getLikes3 = [{ number: 1 }];
-  getLikes4 = [{ number: 1 }];
-  getLikes5 = [{ number: 1 }];
+
   getDeslikes = [{ number: 1 }];
   getDeslikes1 = [{ number: 1 }];
-  getDeslikes2= [{ number: 1 }];
-  getDeslikes3 = [{ number: 1 }];
-  getDeslikes4 = [{ number: 1 }];
-  getDeslikes5 = [{ number: 1 }];
+  getDeslikes2 = [{ number: 1 }];
+
+  commentArea: string;
+  commentText: string;
+
+  commentArea1: string;
+  commentText1: string;
+
+  commentArea2: string;
+  commentText2: string;
+
+
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onComment(){
+    localStorage.setItem('commentArea',JSON.stringify(this.commentArea));
+    this.commentText = this.commentArea;
+  }
+
+  onComment1(){
+    localStorage.setItem('commentArea1',JSON.stringify(this.commentArea1));
+    this.commentText1 = this.commentArea1;
+  }
+
+  onComment2(){
+    localStorage.setItem('commentArea2',JSON.stringify(this.commentArea2));
+    this.commentText2 = this.commentArea2;
   }
   
   onLike() {
@@ -36,18 +57,6 @@ export class HomeComponent implements OnInit {
     this.getLikes2[0].number += 1;
    }
 
-  onLike3() {
-    this.getLikes3[0].number += 1;
-   }
-
-  onLike4() {
-   this.getLikes4[0].number += 1;
-  }
-
-  onLike5() {
-    this.getLikes5[0].number += 1;
-   }
-
   onDeslike() {
     this.getDeslikes[0].number += 1;
   }
@@ -56,14 +65,5 @@ export class HomeComponent implements OnInit {
   }
   onDeslike2() {
     this.getDeslikes2[0].number += 1;
-  }
-  onDeslike3() {
-    this.getDeslikes3[0].number += 1;
-  }
-  onDeslike4() {
-    this.getDeslikes4[0].number += 1;
-  }
-  onDeslike5() {
-    this.getDeslikes5[0].number += 1;
   }
 }

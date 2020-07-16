@@ -53,44 +53,50 @@
     </div>
 
     <div class="box d">
-      <img src="https://picsum.photos/301/301" alt="coisas do hamilton">
-      <br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
-      <br>
-      <br>
-      <button class="btn btn-primary" [appHighlight] = "'#107500'" [defaultColor] = "'#1BC700'" (click)="onLike3()">Like</button>
-      <button class ="btn btn-primary" [appHighlight] = "'#7C0000'" [defaultColor] = "'red'" (click)="onDeslike3()">Dislike</button>
-      <br><br>
-      <div class="like" *ngFor="let getLike of getLikes3">Likes: {{getLike.number}}</div>
-      <div class="like" *ngFor="let getDeslike of getDeslikes3">Deslikes: {{getDeslike.number}}</div>
+      <div class="input-field col s12">
+        <textarea [(ngModel)]= "commentArea" [ngModelOptions]="{standalone: true}" class="materialize-textarea" placeholder="Type here your message!"></textarea>
+        <button class="btn btn-primary" [appHighlight] = "'blue'" [defaultColor] = "'blue'" type="submit" name="action" (click)="onComment()">Submit<i class="material-icons right"></i>
+        </button>
+        <div *ngFor="let comment1 of commentArea">Comentario: {{commentText}}</div>
+      </div>
     </div>
 
     <div class="box e">
-      <img src="https://picsum.photos/302/301" alt="coisas do hamilton">
-      <br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
-      <br>
-      <br>
-      <button class="btn btn-primary" [appHighlight] = "'#107500'" [defaultColor] = "'#1BC700'" (click)="onLike4()">Like</button>
-      <button class ="btn btn-primary" [appHighlight] = "'#7C0000'" [defaultColor] = "'red'" (click)="onDeslike4()">Dislike</button>
-      <br><br>
-      <div class="like" *ngFor="let getLike of getLikes4">Likes: {{getLike.number}}</div>
-      <div class="like" *ngFor="let getDeslike of getDeslikes4">Deslikes: {{getDeslike.number}}</div>
+      <div class="input-field col s12">
+        <textarea [(ngModel)]= "commentArea1" [ngModelOptions]="{standalone: true}" class="materialize-textarea" placeholder="Type here your message!"></textarea>
+        <button class="btn btn-primary" [appHighlight] = "'blue'" [defaultColor] = "'blue'" type="submit" name="action" (click)="onComment1()">Submit<i class="material-icons right"></i>
+        </button>
+        <div>Comentario: {{commentText1}}</div>
+      </div>
     </div>
 
     <div class="box f">
-      <img src="https://picsum.photos/301/302" alt="coisas do hamilton">
-      <br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quas esse consectetur? Atque ad impedit quaerat? Voluptatem et excepturi eum provident, repellendus, sunt ducimus magni molestiae autem inventore perspiciatis nesciunt!
-      <br>
-      <br>
-      <button class="btn btn-primary" [appHighlight] = "'#107500'" [defaultColor] = "'#1BC700'" (click)="onLike5()">Like</button>
-      <button class ="btn btn-primary" [appHighlight] = "'#7C0000'" [defaultColor] = "'red'" (click)="onDeslike5()">Dislike</button>
-      <br><br>
-      <div class="like" *ngFor="let getLike of getLikes5">Likes: {{getLike.number}}</div>
-      <div class="like" *ngFor="let getDeslike of getDeslikes5">Deslikes: {{getDeslike.number}}</div>
+      <div class="input-field col s12">
+        <textarea [(ngModel)]= "commentArea2" [ngModelOptions]="{standalone: true}" class="materialize-textarea" placeholder="Type here your message!"></textarea>
+        <button class="btn btn-primary" [appHighlight] = "'blue'" [defaultColor] = "'blue'" type="submit" name="action" (click)="onComment2()">Submit<i class="material-icons right"></i>
+        </button>
+        <div>Comentario: {{commentText2}}</div>
     </div>
   </div>
 
+</div>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Angular Study</h5>
+        </div>
+        <div class="col l4 offset-l2 s12">
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2020 Texto de direito de copias
+      </div>
+    </div>
+  </footer>
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

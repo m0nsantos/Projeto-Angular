@@ -42,4 +42,19 @@ img {
   padding-left: 20px;
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  width: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  background-color: #7E0014
+}
+    
 
